@@ -8278,6 +8278,12 @@
 		(uuid "51bee237-07a3-4a25-8072-ac3325a35b01")
 	)
 	(junction
+		(at 374.65 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da974770-839c-4ddc-b722-d36180792809")
+	)
+	(junction
 		(at 88.9 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10051,6 +10057,36 @@
 	)
 	(wire
 		(pts
+			(xy 358.14 158.75) (xy 378.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6f9ad8d-5cf4-43ae-b13c-e9f79fcaf78e")
+	)
+	(wire
+		(pts
+			(xy 370.84 153.67) (xy 378.46 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db14297-63cf-4354-a2b4-858d2af3b2ef")
+	)
+	(wire
+		(pts
+			(xy 374.65 153.67) (xy 374.65 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a2660f-7e35-4969-b5f5-d6274290e0df")
+	)
+	(wire
+		(pts
 			(xy 113.03 271.78) (xy 113.03 261.62)
 		)
 		(stroke
@@ -10068,6 +10104,16 @@
 			(justify right bottom)
 		)
 		(uuid "02a4e461-5f57-49df-9b99-e818969003ce")
+	)
+	(label "CHASSIS"
+		(at 368.3 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92074360-2686-499b-a82b-97f961cbe8b8")
 	)
 	(label "SDIO_CLK"
 		(at 115.57 271.78 90)
@@ -13142,6 +13188,210 @@
 			(project ""
 				(path "/d62ee704-355f-444e-be1b-61eabb2fe2aa"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 370.84 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87841a5d-5b8e-46b4-82cd-768a37f366fb")
+		(property "Reference" "R2"
+			(at 373.38 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 373.38 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 370.84 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 370.84 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 370.84 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecb5f596-a5e2-47e8-8fbf-70da552f4d0e")
+		)
+		(pin "2"
+			(uuid "87b0df99-091a-42c0-a979-3976ced438af")
+		)
+		(instances
+			(project ""
+				(path "/d62ee704-355f-444e-be1b-61eabb2fe2aa"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 378.46 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93751a94-a4d9-4c60-af5f-b5ad412cce67")
+		(property "Reference" "C10"
+			(at 381 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 381 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 378.46 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 378.46 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 378.46 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "859c036b-ac8e-4eb8-b983-48dbe817ddc4")
+		)
+		(pin "1"
+			(uuid "0c2f0ff2-1038-4804-963b-0c6710d3750c")
+		)
+		(instances
+			(project "Outback Edge v1.0"
+				(path "/d62ee704-355f-444e-be1b-61eabb2fe2aa"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 374.65 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1c2eb3a-2e75-4ae2-9c9f-87fb1405330d")
+		(property "Reference" "#PWR042"
+			(at 374.65 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 374.65 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23c6823e-1fc7-4e2e-8870-f23d6dd3a315")
+		)
+		(instances
+			(project "Outback Edge v1.0"
+				(path "/d62ee704-355f-444e-be1b-61eabb2fe2aa"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
