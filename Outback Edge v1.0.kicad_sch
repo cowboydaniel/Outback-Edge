@@ -16059,6 +16059,16 @@
 			)
 		)
 	)
+	(text "U2 USBDP4/USBDM4: NC"
+		(at 255.27 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3d951f2e-f293-4c8b-aea8-6db9fd7b9c3c")
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
