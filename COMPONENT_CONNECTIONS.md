@@ -38,6 +38,7 @@ Connects: **U1 (MCU)** ↔ **J4 (MicroSD)** ↔ **J2 (M.2 Socket)**
 | SDIO_D2 | U1 | J4.1 (DAT2) | J2 (SDIO_D2) |
 | SDIO_D3 | U1 | J4.2 (DAT3/CD) | J2 (SDIO_D3) |
 | CARD_DET | U1 | J4.10 (DET_A) | - |
+| SHIELD | GND | J4.11 (SHIELD) | - |
 
 ### QSPI Bus (Quad SPI Flash Interface)
 Connects: **U1 (MCU)** ↔ **J2 (M.2 Socket)**
@@ -198,7 +199,9 @@ Many GPIO pins on the 144-pin MCU are available for expansion. The schematic pri
 
 **Detection Pin:**
 - Pin 9 (DET_B) - Secondary card detection (may be unconnected if only DET_A used)
-- Pin 11 (SHIELD) - Shield connection (typically to GND)
+
+**Shield:**
+- Pin 11 (SHIELD) - Connect to GND with a short trace and via stitching for EMI control.
 
 ### J3 - RJ45 Ethernet Connector
 
