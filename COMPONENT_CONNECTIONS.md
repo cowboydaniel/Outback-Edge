@@ -140,6 +140,8 @@ Connects: **U1 (MCU)** ↔ **J2 (M.2 Socket)**
 
 This connector uses the custom **OutbackEdge-M2e-Mod-Interface** standard, NOT standard PC M.2.
 
+**Connection Status: FULLY WIRED** - All mandatory signals are connected to MCU (U1).
+
 **KEY Cutout Pins (No-Connect by Design):**
 - Pins 24, 25, 26, 27, 28, 29, 30, 31 - Physically absent in E-key sockets
 
@@ -149,10 +151,13 @@ This connector uses the custom **OutbackEdge-M2e-Mod-Interface** standard, NOT s
 - Pin 56 - RESERVED
 - Pin 59 - RESERVED
 - Pin 61 - RESERVED
-- Pin 72 - RESERVED
-- Pin 74 - RESERVED
+- Pins 65, 66, 67, 71 - RESERVED
 
-**Note:** Reserved pins must not be used by modules in v1.0 per the interface specification.
+**Optional Power Rails (Not Connected - Baseboard doesn't provide):**
+- Pins 64, 70, 73 - 5V (optional for LTE modules, USB-powered devices)
+- Pin 68 - 3V3_AUX (optional standby rail for wake functions)
+
+**Note:** Reserved pins must not be used by modules in v1.0. Optional 5V/3V3_AUX rails require baseboard support.
 
 ### J5 - USB 3.0 Type-A Stacked (Dual Port)
 
@@ -261,6 +266,61 @@ All pins connected
         +---------------------------|   SW1, BT1     |
                                     +----------------+
 ```
+
+---
+
+## M.2 Socket (J2) Complete Pin Mapping
+
+### Connected Signal Pins
+
+| Pin | Signal | Type | Connected To |
+|-----|--------|------|--------------|
+| 3 | USB_DP | USB 2.0 | U2 (USB Hub Port 1) |
+| 5 | USB_DM | USB 2.0 | U2 (USB Hub Port 1) |
+| 6 | LED1 | Output | J3 (Ethernet LED) |
+| 8 | I2S_SCK | I2S | U1 (MCU) |
+| 9 | SDIO_CLK | SDIO | U1 (MCU), J4 (uSD) |
+| 10 | I2S_WS | I2S | U1 (MCU) |
+| 11 | SDIO_CMD | SDIO | U1 (MCU), J4 (uSD) |
+| 12 | I2S_DIN | I2S | U1 (MCU) |
+| 13 | SDIO_D0 | SDIO | U1 (MCU), J4 (uSD) |
+| 14 | I2S_DOUT | I2S | U1 (MCU) |
+| 15 | SDIO_D1 | SDIO | U1 (MCU), J4 (uSD) |
+| 16 | LED2 | Output | J3 (Ethernet LED) |
+| 17 | SDIO_D2 | SDIO | U1 (MCU), J4 (uSD) |
+| 19 | SDIO_D3 | SDIO | U1 (MCU), J4 (uSD) |
+| 20 | MOD_EN | Control | U1 (MCU) |
+| 21 | IRQ | Control | U1 (MCU) |
+| 22 | UART_RX | UART | U1 (MCU) |
+| 23 | RST | Control | U1 (MCU) |
+| 32 | UART_TX | UART | U1 (MCU) |
+| 34 | GPIO0 | GPIO | U1 (MCU) |
+| 35 | SPI_SCK | SPI | U1 (MCU) |
+| 36 | GPIO1 | GPIO | U1 (MCU) |
+| 37 | SPI_MOSI | SPI | U1 (MCU) |
+| 38 | GPIO2 | GPIO | U1 (MCU) |
+| 40 | GPIO3 | GPIO | U1 (MCU) |
+| 41 | SPI_MISO | SPI | U1 (MCU) |
+| 42 | GPIO4 | GPIO | U1 (MCU) |
+| 43 | GPIO5 | GPIO | U1 (MCU) |
+| 47 | SPI_CS0 | SPI | U1 (MCU) |
+| 48 | QSPI_CLK | QSPI | U1 (MCU) |
+| 49 | SPI_CS1 | SPI | U1 (MCU) |
+| 50 | QSPI_CS | QSPI | U1 (MCU) |
+| 52 | QSPI_IO0 | QSPI | U1 (MCU) |
+| 53 | QSPI_IO1 | QSPI | U1 (MCU) |
+| 54 | QSPI_IO2 | QSPI | U1 (MCU) |
+| 55 | QSPI_IO3 | QSPI | U1 (MCU) |
+| 58 | I2C_SDA | I2C | U1 (MCU) |
+| 60 | I2C_SCL | I2C | U1 (MCU) |
+| 62 | CARD_DET | Control | U1 (MCU) |
+
+### Connected Power Pins
+
+| Pin | Signal | Rail |
+|-----|--------|------|
+| 1, 7, 18, 33, 39, 45, 51, 57, 63, 69, 75 | GND | Ground |
+| 2, 4, 72, 74 | 3V3_MAIN | +3V3 (1.0A max) |
 
 ---
 
