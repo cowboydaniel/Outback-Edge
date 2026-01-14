@@ -163,6 +163,8 @@ This connector uses the custom **OutbackEdge-M2e-Mod-Interface** standard, NOT s
 
 **USB 3.0 SuperSpeed Pins (Unconnected - USB 2.0 Only Implemented):**
 
+**Schematic note:** SuperSpeed pins are explicitly marked **NC**; only the USB 2.0 D+/D- pairs are routed.
+
 Port A (Top):
 - Pin 5 - SSRX- (SuperSpeed RX-)
 - Pin 6 - SSRX+ (SuperSpeed RX+)

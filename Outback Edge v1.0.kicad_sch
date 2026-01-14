@@ -8441,7 +8441,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 46.99) (xy 153.67 46.99)
+			(xy 162.56 57.15) (xy 153.67 57.15)
 		)
 		(stroke
 			(width 0)
@@ -9141,7 +9141,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 49.53) (xy 153.67 49.53)
+			(xy 162.56 54.61) (xy 153.67 54.61)
 		)
 		(stroke
 			(width 0)
@@ -9271,7 +9271,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 49.53) (xy 111.76 49.53)
+			(xy 120.65 54.61) (xy 111.76 54.61)
 		)
 		(stroke
 			(width 0)
@@ -9601,7 +9601,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 46.99) (xy 111.76 46.99)
+			(xy 120.65 57.15) (xy 111.76 57.15)
 		)
 		(stroke
 			(width 0)
@@ -10270,7 +10270,7 @@
 		(uuid "385eeb9a-bdb4-4fe6-bd20-e944cbe00129")
 	)
 	(label "USB_DM3"
-		(at 162.56 46.99 180)
+		(at 162.56 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10310,7 +10310,7 @@
 		(uuid "45d40739-a3ff-4031-9671-f10e7f1ff26a")
 	)
 	(label "USB_DP1"
-		(at 120.65 49.53 180)
+		(at 120.65 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10500,7 +10500,7 @@
 		(uuid "6a0d603b-f1ac-4a33-86a7-aebee1946142")
 	)
 	(label "USB_DP3"
-		(at 162.56 49.53 180)
+		(at 162.56 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10800,7 +10800,7 @@
 		(uuid "b7ecea00-3001-4619-9b01-36ff2a5edc77")
 	)
 	(label "USB_DM1"
-		(at 120.65 46.99 180)
+		(at 120.65 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16058,6 +16058,38 @@
 				)
 			)
 		)
+	)
+	(no_connect
+		(at 111.76 49.53)
+		(uuid "70205264-ce53-4aa8-9e9a-f7e06a11bce4")
+	)
+	(no_connect
+		(at 111.76 46.99)
+		(uuid "0a06c5fc-63dd-4a15-8366-1a8208c3d9d6")
+	)
+	(no_connect
+		(at 111.76 41.91)
+		(uuid "38948e01-26fc-4f6f-8d4b-f9833e2dc860")
+	)
+	(no_connect
+		(at 111.76 39.37)
+		(uuid "c0db1acd-a7ac-4b87-a7ef-503b1bd16c2f")
+	)
+	(no_connect
+		(at 153.67 49.53)
+		(uuid "123a9baf-d87a-428b-ba65-19b396056867")
+	)
+	(no_connect
+		(at 153.67 46.99)
+		(uuid "364323cb-5d65-402c-bf0d-612fc8b885f2")
+	)
+	(no_connect
+		(at 153.67 41.91)
+		(uuid "046a69ef-9e41-4165-aef1-9ba69d0dd0f8")
+	)
+	(no_connect
+		(at 153.67 39.37)
+		(uuid "f6cb17e3-08ea-4213-983e-6baaaa0abd76")
 	)
 	(sheet_instances
 		(path "/"
