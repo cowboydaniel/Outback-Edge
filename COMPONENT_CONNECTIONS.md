@@ -197,7 +197,7 @@ Many GPIO pins on the 144-pin MCU are available for expansion. The schematic pri
 ### J4 - MicroSD Card Socket
 
 **Detection Pin:**
-- Pin 9 (DET_B) - Secondary card detection (may be unconnected if only DET_A used)
+- Pin 9 (DET_B) - Secondary card detection (intentional NC unless redundant card detect is wired to a U1 GPIO with pull-up/down)
 - Pin 11 (SHIELD) - Shield connection (typically to GND)
 
 ### J3 - RJ45 Ethernet Connector
